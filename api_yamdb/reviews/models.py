@@ -5,10 +5,8 @@ from django.db import models
 
 from .validators import validate_year
 
-User = get_user_model()
 
-
-class User(AbstractUser):
+class CustomUser(AbstractUser):
     ADMIN = "admin"
     MODERATOR = "moderator"
     USER = "user"
@@ -74,6 +72,9 @@ class Genre(models.Model):
 
     def __str__(self):
         return self.name
+
+
+User = get_user_model()
 
 
 class Category(models.Model):

@@ -6,7 +6,7 @@ from django.db import models
 from .validators import validate_year
 
 
-class CustomUser(AbstractUser):
+class User(AbstractUser):
     ADMIN = "admin"
     MODERATOR = "moderator"
     USER = "user"

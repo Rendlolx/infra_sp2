@@ -27,6 +27,34 @@ touch .env
 DB_ENGINE=django.db.backends.postgresql
 или
 echo DB_ENGINE=django.db.backends.postgresql >> .env (For Linux/MacOS)
+
+DB_NAME=postgres
+или
+echo DB_NAME=postgres >> .env (For Linux/MacOS)
+
+POSTGRES_USER=postgres
+или
+echo POSTGRES_USER=postgres >> .env (For Linux/MacOS)
+
+POSTGRES_PASSWORD=postgres
+или
+echo POSTGRES_PASSWORD=postgres >> .env (For Linux/MacOS)
+
+DB_HOST=db
+или
+echo DB_HOST=db >> .env (For Linux/MacOS)
+
+DB_PORT=5432
+или
+echo DB_PORT=5432 >> .env (For Linux/MacOS)
+
+SECRET_KEY = "p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs"
+или
+echo SECRET_KEY = "p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs" >> .env (For Linux/MacOS)
+
+DEBUG = False
+или
+echo DEBUG = False >> .env (For Linux/MacOS)
 ```
 4. Установка и запуск приложения (Загрузив контейнер web из DockerHub):
 ```sh
